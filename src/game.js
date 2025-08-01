@@ -104,7 +104,7 @@ export class Game {
     _loadFlameTexture() {
         const textureLoader = new THREE.TextureLoader();
         this.flameTexture = textureLoader.load(
-            '/assets/textures/flame.png',
+            '/air-force-one-rescue/assets/textures/flame.png',
             undefined,
             undefined,
             err => console.error('Error loading flame texture:', err)
@@ -279,7 +279,7 @@ export class Game {
 
     _initBackground() {
         const loader = new THREE.TextureLoader();
-        loader.load('/assets/textures/sky/sky_full.png',
+        loader.load('/air-force-one-rescue/assets/textures/sky/sky_full.png',
             tex => { this.scene.background = tex; },
             undefined,
             err => console.error('Error loading sky texture:', err)
@@ -451,7 +451,7 @@ export class Game {
 
         const planeSoundLoader = new AudioLoader();
         planeSoundLoader.load(
-            '/assets/sounds/plane_flying.ogg',
+            '/air-force-one-rescue/assets/sounds/plane_flying.ogg',
             buffer => {
                 this.planeSound.setBuffer(buffer);
                 this.planeSound.setLoop(true);

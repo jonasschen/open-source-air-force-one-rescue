@@ -130,7 +130,7 @@ export class Translator {
                 break;
         }
 
-        return `/assets/fonts/${font}.json`;
+        return `/air-force-one-rescue/assets/fonts/${font}.json`;
     }
 }
 

@@ -63,7 +63,7 @@ export class TankerManager {
 
         const fillingSoundLoader = new AudioLoader();
         fillingSoundLoader.load(
-            '/assets/sounds/filling.ogg',
+            '/air-force-one-rescue/assets/sounds/filling.ogg',
             buffer => {
                 this.fillingSound.setBuffer(buffer);
                 this.fillingSound.setLoop(false);
@@ -75,7 +75,7 @@ export class TankerManager {
 
         const tankerSoundLoader = new AudioLoader();
         tankerSoundLoader.load(
-            '/assets/sounds/tanker.ogg',
+            '/air-force-one-rescue/assets/sounds/tanker.ogg',
             buffer => {
                 this.tankerSound.setBuffer(buffer);
                 this.tankerSound.setLoop(false);
@@ -99,7 +99,7 @@ export class TankerManager {
             this.isLoadingModel = true;
 
             this.loader.load(
-                '/assets/models/airplanes/lockheed_s3_viking.glb',
+                '/air-force-one-rescue/assets/models/airplanes/lockheed_s3_viking.glb',
                 (gltf) => {
                     this.tankerPlaneModel = gltf.scene.clone();
 

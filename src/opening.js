@@ -50,7 +50,7 @@ export class Opening {
     _initBackground() {
         const loader = new THREE.TextureLoader();
         loader.load(
-            '/assets/textures/opening.png',
+            '/air-force-one-rescue/assets/textures/opening.png',
             tex => { this.scene.background = tex; },
             undefined,
             err => console.error('Error loading background:', err)
@@ -126,7 +126,7 @@ export class Opening {
 
         const alienSoundLoader = new AudioLoader();
         alienSoundLoader.load(
-            '/assets/sounds/opening_alien.ogg',
+            '/air-force-one-rescue/assets/sounds/opening_alien.ogg',
             buffer => {
                 this.alienSound.setBuffer(buffer);
                 this.alienSound.setLoop(false);
@@ -139,7 +139,7 @@ export class Opening {
 
         const planeSoundLoader = new AudioLoader();
         planeSoundLoader.load(
-            '/assets/sounds/opening_plane.ogg',
+            '/air-force-one-rescue/assets/sounds/opening_plane.ogg',
             buffer => {
                 this.planeSound.setBuffer(buffer);
                 this.planeSound.setLoop(false);
