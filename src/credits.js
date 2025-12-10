@@ -62,7 +62,7 @@ export class Credits {
     _initBackground() {
         const loader = new THREE.TextureLoader();
         loader.load(
-            '/air-force-one-rescue/assets/textures/credits.png',
+            '/open-source-air-force-one-rescue/assets/textures/credits.png',
             tex => { this.scene.background = tex; },
             undefined,
             err => console.error('Error loading background:', err)
@@ -79,7 +79,7 @@ export class Credits {
 
         const creditsSoundLoader = new AudioLoader();
         creditsSoundLoader.load(
-            '/air-force-one-rescue/assets/sounds/credits.ogg',
+            '/open-source-air-force-one-rescue/assets/sounds/credits.ogg',
             buffer => {
                 this.creditsSound.setBuffer(buffer);
                 this.creditsSound.setLoop(false);

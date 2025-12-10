@@ -3,12 +3,12 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {AudioListener, AudioLoader, Audio} from 'three';
 
 const rocketDefs = [
-    { url: '/air-force-one-rescue/assets/models/rockets/simple_rocket.glb', speed: 0.16, scale: 0.0013, orientation: 'left' },
-    { url: '/air-force-one-rescue/assets/models/rockets/sci-fi_missile.glb', speed: 0.14, scale: 0.5, orientation: 'left' },
-    { url: '/air-force-one-rescue/assets/models/rockets/aim-9_missile.glb', speed: 0.12, scale: 0.7, orientation: 'left' },
-    { url: '/air-force-one-rescue/assets/models/rockets/mica_anti_aircraft_missile_-free.glb', speed: 0.10, scale: 0.7, orientation: 'right' },
-    { url: '/air-force-one-rescue/assets/models/rockets/aim-120_amraam_missile.glb', speed: 0.08, scale: 0.7, orientation: 'left' },
-    { url: '/air-force-one-rescue/assets/models/rockets/missile_fateh_110.glb', speed: 0.06, scale: 0.002, orientation: 'left' },
+    { url: '/open-source-air-force-one-rescue/assets/models/rockets/simple_rocket.glb', speed: 0.16, scale: 0.0013, orientation: 'left' },
+    { url: '/open-source-air-force-one-rescue/assets/models/rockets/sci-fi_missile.glb', speed: 0.14, scale: 0.5, orientation: 'left' },
+    { url: '/open-source-air-force-one-rescue/assets/models/rockets/aim-9_missile.glb', speed: 0.12, scale: 0.7, orientation: 'left' },
+    { url: '/open-source-air-force-one-rescue/assets/models/rockets/mica_anti_aircraft_missile_-free.glb', speed: 0.10, scale: 0.7, orientation: 'right' },
+    { url: '/open-source-air-force-one-rescue/assets/models/rockets/aim-120_amraam_missile.glb', speed: 0.08, scale: 0.7, orientation: 'left' },
+    { url: '/open-source-air-force-one-rescue/assets/models/rockets/missile_fateh_110.glb', speed: 0.06, scale: 0.002, orientation: 'left' },
 ];
 
 export class RocketsManager {
@@ -48,7 +48,7 @@ export class RocketsManager {
     _loadExplosionTexture() {
         const textureLoader = new THREE.TextureLoader();
         this.explosionTexture = textureLoader.load(
-            '/air-force-one-rescue/assets/textures/explosion.png',
+            '/open-source-air-force-one-rescue/assets/textures/explosion.png',
             undefined,
             undefined,
             err => console.error('Error loading explosion texture:', err)
@@ -106,7 +106,7 @@ export class RocketsManager {
 
         const rocketSoundLoader = new AudioLoader();
         rocketSoundLoader.load(
-            '/air-force-one-rescue/assets/sounds/rocket.ogg',
+            '/open-source-air-force-one-rescue/assets/sounds/rocket.ogg',
             buffer => {
                 this.rocketSound.setBuffer(buffer);
                 this.rocketSound.setLoop(true);
@@ -118,7 +118,7 @@ export class RocketsManager {
 
         const explosionSoundLoader = new AudioLoader();
         explosionSoundLoader.load(
-            '/air-force-one-rescue/assets/sounds/explosion.ogg',
+            '/open-source-air-force-one-rescue/assets/sounds/explosion.ogg',
             buffer => {
                 this.explosionSound.setBuffer(buffer);
                 this.explosionSound.setLoop(false);

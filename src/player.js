@@ -14,7 +14,7 @@ export class Player {
     loadModel(onModelLoaded) {
         const loader = new GLTFLoader();
         loader.load(
-            '/air-force-one-rescue/assets/models/airplanes/air_force_one_-_boeing_747_vc-25ab.glb',
+            '/open-source-air-force-one-rescue/assets/models/airplanes/air_force_one_-_boeing_747_vc-25ab.glb',
             (gltf) => {
                 const model = gltf.scene;
 

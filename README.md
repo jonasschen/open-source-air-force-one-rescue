@@ -3,14 +3,14 @@
 A thrilling 3D web-based flight game where you pilot Air Force One through dangerous territory, avoiding enemies and managing fuel while completing rescue missions.
 
 ![Air Force One Rescue](https://img.shields.io/badge/Game-Air%20Force%20One%20Rescue-blue)
-![Views](https://komarev.com/ghpvc/?username=Jonas-Schen&repo=air-force-one-rescue&color=blue)
-![Forks](https://img.shields.io/github/forks/Jonas-Schen/air-force-one-rescue?style=social)
+![Views](https://komarev.com/ghpvc/?username=Jonas-Schen&repo=open-source-air-force-one-rescue&color=blue)
+![Forks](https://img.shields.io/github/forks/Jonas-Schen/open-source-air-force-one-rescue?style=social)
 ![Three.js](https://img.shields.io/badge/Three.js-0.176.0-green)
 ![Vite](https://img.shields.io/badge/Vite-6.3.5-purple)
 ![GSAP](https://img.shields.io/badge/GSAP-3.13.0-orange)
 
 ## 🕹️ Try it
-https://jonas-schen.github.io/air-force-one-rescue/
+https://jonas-schen.github.io/open-source-air-force-one-rescue/
 
 PS: This isn't quite ready yet, there are still some bugs 🐛. We're working on improving it asap.
 
@@ -73,7 +73,7 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173/air-force-one-rescue/` (or the port shown in your terminal)
+4. Open your browser and navigate to `http://localhost:5173/open-source-air-force-one-rescue/` (or the port shown in your terminal)
 
 ### Building for Deploy
 

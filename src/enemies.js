@@ -22,7 +22,7 @@ export class EnemiesManager {
         this._loadExplosionTexture();
 
         this.loader.load(
-            '/air-force-one-rescue/assets/models/enemies/ufo_doodle.glb',
+            '/open-source-air-force-one-rescue/assets/models/enemies/ufo_doodle.glb',
             gltf => {
                 this.ufoModel = gltf.scene;
                 console.log('UFO model loaded!');
@@ -35,7 +35,7 @@ export class EnemiesManager {
     _loadExplosionTexture() {
         const textureLoader = new THREE.TextureLoader();
         this.explosionTexture = textureLoader.load(
-            '/air-force-one-rescue/assets/textures/explosion.png',
+            '/open-source-air-force-one-rescue/assets/textures/explosion.png',
             undefined,
             undefined,
             err => console.error('Error loading explosion texture:', err)
@@ -90,7 +90,7 @@ export class EnemiesManager {
 
         const laserSoundLoader = new AudioLoader();
         laserSoundLoader.load(
-            '/air-force-one-rescue/assets/sounds/laser_shoot.ogg',
+            '/open-source-air-force-one-rescue/assets/sounds/laser_shoot.ogg',
             buffer => {
                 this.laserSound.setBuffer(buffer);
                 this.laserSound.setLoop(false);
@@ -102,7 +102,7 @@ export class EnemiesManager {
 
         const explosionSoundLoader = new AudioLoader();
         explosionSoundLoader.load(
-            '/air-force-one-rescue/assets/sounds/explosion.ogg',
+            '/open-source-air-force-one-rescue/assets/sounds/explosion.ogg',
             buffer => {
                 this.explosionSound.setBuffer(buffer);
                 this.explosionSound.setLoop(false);
@@ -114,7 +114,7 @@ export class EnemiesManager {
 
         const crashSoundLoader = new AudioLoader();
         crashSoundLoader.load(
-            '/air-force-one-rescue/assets/sounds/crash.ogg',
+            '/open-source-air-force-one-rescue/assets/sounds/crash.ogg',
             buffer => {
                 this.crashSound.setBuffer(buffer);
                 this.crashSound.setLoop(false);
