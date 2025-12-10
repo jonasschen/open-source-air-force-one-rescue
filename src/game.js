@@ -66,20 +66,20 @@ export class Game {
     }
 
     async _loadModels() {
-        this._setupScene();
-        this._initBackground();
-        this._initCamera();
-        this._initRenderer();
-        this._initLights();
-        this._initFlameTexture();
-        this._initPlayer();
-        this._bindEvents();
-        this._animate();
-        this._initAudio();
+        await this._setupScene();
+        await this._initBackground();
+        await this._initCamera();
+        await this._initRenderer();
+        await this._initLights();
+        await this._initFlameTexture();
+        await this._initPlayer();
+        await this._bindEvents();
+        await this._animate();
+        await this._initAudio();
 
-        this.rocketsManager = new RocketsManager(this.scene, this.camera, this.player, this.gameState);
-        this.enemiesManager = new EnemiesManager(this.scene, this.camera, this.player, this.gameState);
-        this.tankerManager = new TankerManager(this.scene, this.camera, this.player, this.gameState);
+        await this.rocketsManager = new RocketsManager(this.scene, this.camera, this.player, this.gameState);
+        await this.enemiesManager = new EnemiesManager(this.scene, this.camera, this.player, this.gameState);
+        await this.tankerManager = new TankerManager(this.scene, this.camera, this.player, this.gameState);
     }
 
     _updateFuelConsumption() {
