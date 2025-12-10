@@ -8,8 +8,8 @@ import {AudioListener, AudioLoader, Audio} from 'three';
 
 export class Opening {
     /**
-     * @param {HTMLElement} container  — elemento onde o canvas será inserido (ex: document.body)
-     * @param {Function}    onFinish   — callback chamado após clearScene()
+     * @param {HTMLElement} container
+     * @param {Function}    onFinish
      */
     constructor(container, onFinish = () => {
     }) {
@@ -19,14 +19,16 @@ export class Opening {
         this.letters = [];
         this.scales = [];
 
-        this._setupScene();
-        this._initBackground();
-        this._initLights();
-        this._initPlayer();
-        this._initText();
-        this._initAudios();
-
         window.addEventListener('resize', this._onResize.bind(this));
+    }
+
+    async _loadModels() {
+        await this._setupScene();
+        await this._initBackground();
+        await this._initLights();
+        await this._initText();
+        await this._initAudios();
+        await this._initPlayer();
     }
 
     _setupScene() {
@@ -150,7 +152,9 @@ export class Opening {
         );
     }
 
-    start() {
+    async start() {
+        await this._loadModels();
+
         //> Entrance animation + explosion and cleanup sequence
         gsap.from(this.scales, {
             duration: 1,
@@ -268,4 +272,3 @@ export class Opening {
         this.renderer.setSize(window.innerWidth, window.innerHeight);
     }
 }
-

@@ -63,13 +63,15 @@ export class Game {
                 showGameOver(this.gameState.distance, this.resetGame.bind(this));
             }
         };
+    }
 
+    async _loadModels() {
         this._setupScene();
         this._initBackground();
         this._initCamera();
         this._initRenderer();
         this._initLights();
-        this._loadFlameTexture();
+        this._initFlameTexture();
         this._initPlayer();
         this._bindEvents();
         this._animate();
@@ -101,7 +103,7 @@ export class Game {
         }
     }
 
-    _loadFlameTexture() {
+    _initFlameTexture() {
         const textureLoader = new THREE.TextureLoader();
         this.flameTexture = textureLoader.load(
             '/open-source-air-force-one-rescue/assets/textures/flame.png',
@@ -230,7 +232,9 @@ export class Game {
         }, blinkInterval);
     }
 
-    start() {
+    async start() {
+        await this._loadModels();
+
         this.gameStarted = false; //> Will only turn true when the player finishes loading
         this.clock = new THREE.Clock();
     }
