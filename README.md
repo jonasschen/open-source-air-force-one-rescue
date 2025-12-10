@@ -1,11 +1,18 @@
-# Air Force One Rescue 🛩️
+# Air Force One Rescue ✈️
 
 A thrilling 3D web-based flight game where you pilot Air Force One through dangerous territory, avoiding enemies and managing fuel while completing rescue missions.
 
 ![Air Force One Rescue](https://img.shields.io/badge/Game-Air%20Force%20One%20Rescue-blue)
+![Views](https://komarev.com/ghpvc/?username=Jonas-Schen&repo=air-force-one-rescue&color=blue)
+![Forks](https://img.shields.io/github/forks/Jonas-Schen/air-force-one-rescue?style=social)
 ![Three.js](https://img.shields.io/badge/Three.js-0.176.0-green)
 ![Vite](https://img.shields.io/badge/Vite-6.3.5-purple)
 ![GSAP](https://img.shields.io/badge/GSAP-3.13.0-orange)
+
+## 🕹️ Try it
+https://jonas-schen.github.io/air-force-one-rescue/
+
+PS: This isn't quite ready yet, there are still some bugs 🐛. We're working on improving it asap.
 
 ## 🎯 Game Story
 
@@ -66,16 +73,28 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
+4. Open your browser and navigate to `http://localhost:5173/air-force-one-rescue/` (or the port shown in your terminal)
 
-### Building for Production
+### Building for Deploy
 
 ```
-npm run build
+npm run deploy
 ```
 
 
 The built files will be available in the `dist` directory.
+
+## 🤍 Consider Sponsoring
+Help me maintain this project, please consider looking at the [FUNDING](./.github/FUNDING.yml) file for more info.
+
+<a href="https://bmc.link/jonasschen" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+#### BTC
+![btc](https://github.com/jonasschen/laravel-lang-monitor/assets/31046817/2f69a4aa-4ee2-442e-aa1f-4a1c0cde217c)
+
+#### ETH
+![eth](https://github.com/jonasschen/laravel-lang-monitor/assets/31046817/41ca0d2f-e120-4733-a96b-ff7a34e1e4de)
+
 
 ## 🎯 How to Play
 
