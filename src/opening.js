@@ -25,10 +25,10 @@ export class Opening {
     async _loadModels() {
         await this._setupScene();
         await this._initBackground();
+        await this._initPlayer();
         await this._initLights();
         await this._initText();
         await this._initAudios();
-        await this._initPlayer();
     }
 
     _setupScene() {
@@ -66,8 +66,8 @@ export class Opening {
         this.scene.add(dir);
     }
 
-    _initPlayer() {
-        this.player = new Player(this.scene, () => {
+    async _initPlayer() {
+        await this.player = new Player(this.scene, () => {
             this.player.group.position.set(0, -30, -50);
             this.player.group.rotation.y = Math.PI;
         });
